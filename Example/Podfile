@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JHExtension_Example' do
+  pod 'JHExtension', :path => '../'
+
+  target 'JHExtension_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

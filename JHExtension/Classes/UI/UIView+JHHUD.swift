@@ -11,6 +11,10 @@ import MBProgressHUD
 
 extension UIView {
     
+    public func showHUD() {
+        self.show(text: "", hideAfterDelay: 0, isLoading: true, complete: nil)
+    }
+    
     public func show(text: String, hideAfterDelay delay: Double = 0) {
         self.show(text: text, hideAfterDelay: delay, complete: nil)
     }
